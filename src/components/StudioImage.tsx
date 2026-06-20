@@ -11,6 +11,8 @@ interface StudioImageProps {
   rounded?: string
   /** Loading strategy — use 'eager' for above-the-fold imagery. */
   loading?: 'lazy' | 'eager'
+  /** Focal point for cropping. Use 'top' for portraits so faces stay in frame. */
+  position?: 'center' | 'top' | 'bottom'
 }
 
 /**
@@ -25,7 +27,15 @@ export default function StudioImage({
   zoom = true,
   rounded = 'rounded-[1.4rem]',
   loading = 'lazy',
+  position = 'center',
 }: StudioImageProps) {
+  const objectPosition =
+    position === 'top'
+      ? 'object-top'
+      : position === 'bottom'
+        ? 'object-bottom'
+        : 'object-center'
+
   return (
     <div className={`group relative overflow-hidden ${rounded} ${ratio} ${className}`}>
       <motion.img
@@ -35,7 +45,7 @@ export default function StudioImage({
         decoding="async"
         whileHover={zoom ? { scale: 1.06 } : undefined}
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute inset-0 h-full w-full object-cover"
+        className={`absolute inset-0 h-full w-full object-cover ${objectPosition}`}
       />
       {/* subtle gradient + inner sheen for a premium finish */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-charcoal/15 via-transparent to-transparent" />

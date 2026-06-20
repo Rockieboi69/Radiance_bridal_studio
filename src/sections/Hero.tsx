@@ -99,6 +99,7 @@ export default function Hero() {
               rounded="rounded-[2rem]"
               className="shadow-soft-lg"
               loading="eager"
+              position="top"
             />
 
             {/* Floating accent card */}

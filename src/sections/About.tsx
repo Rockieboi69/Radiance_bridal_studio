@@ -38,6 +38,7 @@ export default function About() {
               ratio="aspect-[4/5]"
               rounded="rounded-[2rem]"
               className="shadow-soft-lg"
+              position="top"
             />
             <div className="absolute -bottom-10 -right-6 w-40 sm:w-48">
               <StudioImage

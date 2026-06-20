@@ -254,6 +254,7 @@ export default function Booking() {
               ratio="aspect-[4/5]"
               rounded="rounded-[1.8rem]"
               className="shadow-soft-lg"
+              position="top"
             />
             <div className="card-luxe flex flex-col gap-3 p-6">
               <h3 className="font-serif text-lg text-charcoal">What happens next?</h3>
