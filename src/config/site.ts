@@ -18,7 +18,7 @@ export const siteConfig = {
   contact: {
     phoneDisplay: '+91 93213 87033',
     phoneHref: '+919321387033',
-    email: 'hello@radiancebridalstudio.com',
+    email: 'eshwaripillai17@gmail.com',
     address:
       '1st Floor, Netaji Road, Opposite Srinivasa Perumal Kovil, Pappanaickenpalayam, Coimbatore, Tamil Nadu 641037',
     hours: 'Mon – Sat · 10:00 AM – 8:00 PM (By appointment)',
