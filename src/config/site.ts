@@ -12,15 +12,15 @@ export const siteConfig = {
   // ── Booking / WhatsApp ──────────────────────────────────────────────
   // Used to build the WhatsApp deep link on the booking page.
   // Full international format (no '+', spaces or dashes). 91 = India.
-  whatsappNumber: '917041109334',
+  whatsappNumber: '919321387033',
 
   // ── Contact details (placeholders — replace with real values) ───────
   contact: {
-    phoneDisplay: '+91 70411 09334',
-    phoneHref: '+917041109334',
+    phoneDisplay: '+91 93213 87033',
+    phoneHref: '+919321387033',
     email: 'hello@radiancebridalstudio.com',
     address:
-      'Bharathiyar Rd, Netaji Rd, near Srinivasa Perumal Kovil, Pappanaickenpalayam, Coimbatore, Tamil Nadu 641037',
+      '1st Floor, Netaji Road, Opposite Srinivasa Perumal Kovil, Pappanaickenpalayam, Coimbatore, Tamil Nadu 641037',
     hours: 'Mon – Sat · 10:00 AM – 8:00 PM (By appointment)',
     // Shareable Google Maps link (opens directions / full map).
     mapLink: 'https://maps.app.goo.gl/Simy9sUwCg6Lz7so6',
@@ -30,7 +30,7 @@ export const siteConfig = {
   social: {
     instagram:
       'https://www.instagram.com/radiance_bridal_studio?igsh=ZmJhaWZkM3JyMDU1',
-    whatsapp: 'https://wa.me/917041109334',
+    whatsapp: 'https://wa.me/919321387033',
   },
 } as const
 
