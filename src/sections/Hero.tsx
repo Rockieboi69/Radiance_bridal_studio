@@ -73,7 +73,7 @@ export default function Hero() {
 
           <motion.div
             variants={fadeUp}
-            className="mt-12 flex items-center gap-8 border-t border-champagne/20 pt-7"
+            className="mt-12 flex items-center gap-4 border-t border-champagne/20 pt-7 sm:gap-8"
           >
             <Stat value="500+" label="Brides Styled" />
             <span className="h-8 w-px bg-champagne/20" />
