@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-ivory text-charcoal font-sans antialiased;
+    background-image: radial-gradient(
+        1200px 600px at 80% -10%,
+        rgba(232, 201, 196, 0.18),
+        transparent
+      ),
+      radial-gradient(900px 500px at -10% 10%, rgba(228, 210, 168, 0.16), transparent);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: rgba(201, 168, 106, 0.28);
+    color: #2b2622;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif text-charcoal;
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .container-luxe {
+    @apply mx-auto w-full max-w-[1240px] px-6 sm:px-8 lg:px-10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-luxe text-champagne-dark;
+  }
+
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-8 bg-champagne;
+  }
+
+  .btn-gold {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-charcoal px-8 py-3.5
+      text-sm font-semibold tracking-wide text-ivory transition-all duration-500
+      hover:shadow-soft-lg;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-champagne/60 bg-transparent px-8 py-3.5
+      text-sm font-semibold tracking-wide text-charcoal transition-all duration-500
+      hover:border-champagne hover:bg-champagne/10;
+  }
+
+  .card-luxe {
+    @apply rounded-[1.6rem] border border-white/60 bg-white/70 shadow-glass backdrop-blur-sm;
+  }
+
+  .gold-text {
+    background: linear-gradient(100deg, #A6843E, #E4D2A8, #C9A86A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer utilities {
+  .text-shadow-soft {
+    text-shadow: 0 2px 30px rgba(43, 38, 34, 0.25);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5efe6;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d8c089;
+    border-radius: 999px;
+    border: 2px solid #f5efe6;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c9a86a;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
