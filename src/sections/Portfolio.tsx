@@ -22,17 +22,19 @@ interface Item {
   src: string
 }
 
-// Varied aspect ratios create a true masonry rhythm.
+// Ratios match each photo's true orientation so faces aren't cropped.
+// gallery alternates portrait / square (see config/images.ts).
 const items: Item[] = [
-  { id: 1, category: 'Traditional Brides', ratio: 'aspect-[3/4]', src: gallery[0] },
+  { id: 1, category: 'Traditional Brides', ratio: 'aspect-[2/3]', src: gallery[0] },
   { id: 2, category: 'Modern Brides', ratio: 'aspect-square', src: gallery[1] },
-  { id: 3, category: 'Reception Looks', ratio: 'aspect-[4/5]', src: gallery[2] },
-  { id: 4, category: 'Editorial Looks', ratio: 'aspect-[3/4]', src: gallery[3] },
-  { id: 5, category: 'Engagement Looks', ratio: 'aspect-square', src: gallery[4] },
-  { id: 6, category: 'Traditional Brides', ratio: 'aspect-[4/5]', src: gallery[5] },
-  { id: 7, category: 'Modern Brides', ratio: 'aspect-[3/4]', src: gallery[6] },
+  { id: 3, category: 'Reception Looks', ratio: 'aspect-[2/3]', src: gallery[2] },
+  { id: 4, category: 'Engagement Looks', ratio: 'aspect-square', src: gallery[3] },
+  { id: 5, category: 'Editorial Looks', ratio: 'aspect-[2/3]', src: gallery[4] },
+  { id: 6, category: 'Traditional Brides', ratio: 'aspect-square', src: gallery[5] },
+  { id: 7, category: 'Modern Brides', ratio: 'aspect-[2/3]', src: gallery[6] },
   { id: 8, category: 'Reception Looks', ratio: 'aspect-square', src: gallery[7] },
-  { id: 9, category: 'Editorial Looks', ratio: 'aspect-[4/5]', src: gallery[8] },
+  { id: 9, category: 'Engagement Looks', ratio: 'aspect-[2/3]', src: gallery[8] },
+  { id: 10, category: 'Editorial Looks', ratio: 'aspect-square', src: gallery[9] },
 ]
 
 export default function Portfolio() {

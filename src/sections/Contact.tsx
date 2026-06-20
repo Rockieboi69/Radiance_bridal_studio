@@ -7,6 +7,12 @@ import { Icon } from '../components/Icons'
 export default function Contact() {
   const { contact, social } = siteConfig
 
+  // Both the embedded map and the directions button are driven by the address,
+  // so updating the address in config updates the map automatically.
+  const mapsQuery = encodeURIComponent(contact.address)
+  const mapEmbedSrc = `https://maps.google.com/maps?q=${mapsQuery}&z=16&output=embed`
+  const mapDirections = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`
+
   const details = [
     { icon: 'pin' as const, label: 'Studio Address', value: contact.address },
     { icon: 'phone' as const, label: 'Phone', value: contact.phoneDisplay, href: `tel:${contact.phoneHref}` },
@@ -88,16 +94,14 @@ export default function Contact() {
             <div className="relative flex h-full min-h-[22rem] flex-col overflow-hidden rounded-[1.8rem] border border-white/60 shadow-glass">
               <iframe
                 title="Radiance Bridal Studio location on Google Maps"
-                src={`https://maps.google.com/maps?q=${encodeURIComponent(
-                  contact.address,
-                )}&z=16&output=embed`}
+                src={mapEmbedSrc}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="h-full w-full grow border-0"
                 style={{ minHeight: '18rem' }}
               />
               <a
-                href={contact.mapLink}
+                href={mapDirections}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 border-t border-champagne/20 bg-white/80 px-5 py-3.5 text-sm font-semibold text-charcoal backdrop-blur-sm transition-colors hover:bg-champagne/10 hover:text-champagne-dark"

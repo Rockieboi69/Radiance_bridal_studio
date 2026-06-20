@@ -22,8 +22,6 @@ export const siteConfig = {
     address:
       '1st Floor, Netaji Road, Opposite Srinivasa Perumal Kovil, Pappanaickenpalayam, Coimbatore, Tamil Nadu 641037',
     hours: 'Mon – Sat · 10:00 AM – 8:00 PM (By appointment)',
-    // Shareable Google Maps link (opens directions / full map).
-    mapLink: 'https://maps.app.goo.gl/Simy9sUwCg6Lz7so6',
   },
 
   // ── Social links ────────────────────────────────────────────────────
