@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { HennaBackdrop } from './components/Henna'
+import { TraditionalBackdrop } from './components/Motifs'
 import Home from './pages/Home'
 import Booking from './pages/Booking'
 
@@ -34,7 +34,7 @@ export default function App() {
   return (
     <div className="flex min-h-screen flex-col">
       <ScrollToTop />
-      <HennaBackdrop />
+      <TraditionalBackdrop />
       <Navbar />
       <main className="flex-1">
         <AnimatePresence mode="wait">
