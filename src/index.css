@@ -16,8 +16,7 @@
   body {
     @apply bg-ivory-50 text-charcoal font-sans antialiased;
     /* Deeper, warmer "handmade paper" tone. Edges are a darker sand/
-       champagne so motifs read boldly, while the reading area keeps a
-       lighter cream pool so the dark charcoal text stays highly legible. */
+       champagne so the henna motifs read boldly. */
     background-color: #D6C29C;
     background-image: radial-gradient(
         1500px 1050px at 50% 34%,
@@ -51,8 +50,6 @@
   h1, h2, h3, h4 {
     @apply font-serif text-charcoal;
     text-wrap: balance;
-    /* Soft light halo lifts headings off the textured background. */
-    text-shadow: 0 1px 10px rgba(247, 240, 224, 0.85);
   }
 }
 

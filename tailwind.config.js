@@ -16,8 +16,8 @@ export default {
         champagne: {
           DEFAULT: '#C9A86A',
           light: '#E4D2A8',
-          dark: '#A6843E',
-          deep: '#8C6B2F',
+          dark: '#8A6A2D',
+          deep: '#6E521F',
         },
         // Subtle blush pink highlights
         blush: {
@@ -26,9 +26,9 @@ export default {
           soft: '#F3DAD4',
         },
         charcoal: {
-          DEFAULT: '#2B2622',
-          light: '#4A433C',
-          soft: '#6B6258',
+          DEFAULT: '#1C1813',
+          light: '#332C25',
+          soft: '#4C443A',
         },
       },
       fontFamily: {

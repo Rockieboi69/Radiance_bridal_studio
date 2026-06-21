@@ -82,14 +82,13 @@ export function TraditionalBackdrop() {
       aria-hidden
       className="pointer-events-none fixed inset-0 -z-10 overflow-hidden text-[#5E3F1E]"
     >
-      {/* Henna mandalas anchored to the edges */}
-      <HennaMandala className="absolute -left-28 -top-28 h-[26rem] w-[26rem] opacity-[0.42] animate-float-slow" />
-      <HennaMandala className="absolute -right-32 top-[32%] h-[30rem] w-[30rem] opacity-[0.38]" />
-      <HennaMandala className="absolute -left-24 bottom-[6%] h-[22rem] w-[22rem] opacity-[0.38] animate-float-slow" />
-      <HennaMandala className="absolute right-[5%] top-[5%] hidden h-44 w-44 opacity-[0.36] lg:block" />
+      {/* Henna mandalas anchored to the far edges (kept clear of the text) */}
+      <HennaMandala className="absolute -left-40 -top-40 h-[26rem] w-[26rem] opacity-[0.42] animate-float-slow" />
+      <HennaMandala className="absolute -right-44 top-[34%] h-[30rem] w-[30rem] opacity-[0.38]" />
+      <HennaMandala className="absolute -left-36 bottom-[4%] h-[22rem] w-[22rem] opacity-[0.38] animate-float-slow" />
+      <HennaMandala className="absolute -right-10 top-[3%] hidden h-44 w-44 opacity-[0.36] lg:block" />
 
-      {/* Strong cream reading pool that clears the central area so text stays
-          bold and legible, while the darker henna stays prominent at the edges. */}
+      {/* Cream reading pool that gently lifts the central content area. */}
       <div
         className="absolute inset-0"
         style={{
