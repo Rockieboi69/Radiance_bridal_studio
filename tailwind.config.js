@@ -26,9 +26,9 @@ export default {
           soft: '#F3DAD4',
         },
         charcoal: {
-          DEFAULT: '#1C1813',
-          light: '#332C25',
-          soft: '#4C443A',
+          DEFAULT: '#120F0A',
+          light: '#261F18',
+          soft: '#382F26',
         },
       },
       fontFamily: {
